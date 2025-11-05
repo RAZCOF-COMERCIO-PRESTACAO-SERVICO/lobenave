@@ -1,0 +1,56 @@
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+#hero-bg {
+    background: linear-gradient(135deg, #1a6bb0 0%, #0e4a7a 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section minimum heights */
+section {
+    scroll-margin-top: 80px;
+}
+.blue-marine {
+    color: #1a6bb0;
+}
+
+.bg-blue-marine {
+    background-color: #1a6bb0;
+}
+/* Navigation Active State */
+.custom-navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* Form Input Styles */
+input, textarea, select {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #0b2c4d;
+    outline-offset: 2px;
+}
+
+/* Section Padding for Responsive */
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        min-height: auto;
+        scroll-margin-top: 60px;
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+/* Gallery Image Hover Effect */
+.gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
